@@ -1,0 +1,108 @@
+.my-message {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f5;
+  border-color: #e9e9eb;
+  border-radius: 4px;
+  padding: 11px 15px;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 8px;
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 1px;
+  transition: opacity 0.4s, transform 0.4s, top 0.4s;
+}
+.my-message p {
+  margin: 0;
+}
+.my-message .my-message__content {
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+}
+.my-message .my-message__content:focus {
+  outline-width: 0;
+}
+.my-message .my-message__icon {
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.my-message .my-message__closeBtn {
+  cursor: pointer;
+  color: #a8abb2;
+  font-size: 16px;
+}
+.my-message .my-message__closeBtn:focus {
+  outline-width: 0;
+}
+.my-message .my-message__closeBtn:hover {
+  color: #909399;
+}
+
+.my-message.is-plain {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+}
+
+.my-message--info {
+  background-color: #f4f4f5;
+  border-color: #e1f3d8;
+}
+.my-message--info .my-message-icon--info {
+  color: #909399;
+}
+.my-message--info .my-message__content {
+  color: #909399;
+  overflow-wrap: break-word;
+}
+
+.my-message--success {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+}
+.my-message--success .my-message-icon--success {
+  color: #67c23a;
+}
+.my-message--success .my-message__content {
+  color: #67c23a;
+  overflow-wrap: break-word;
+}
+
+.my-message--warning {
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+}
+.my-message--warning .my-message-icon--warning {
+  color: #e6a23c;
+}
+.my-message--warning .my-message__content {
+  color: #e6a23c;
+  overflow-wrap: break-word;
+}
+
+.my-message--error {
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+}
+.my-message--error .my-message-icon--error {
+  color: #f56c6c;
+}
+.my-message--error .my-message__content {
+  color: #f56c6c;
+  overflow-wrap: break-word;
+}
+
+.my-message-fade-enter-from,
+.my-message-fade-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}

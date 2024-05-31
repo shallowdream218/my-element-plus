@@ -1,0 +1,62 @@
+$--el-badge-bg-color:#f56c6c;
+$--el-color-danger: #f56c6c;
+$--el-badge-radius: 10px;
+
+$--el-badge-padding: 6px;
+
+$--el-color-white: #ffffff;
+$--el-bg-color: #ffffff;
+$--el-badge-size: 18px;
+
+$--el-color-primary: #409eff;
+$--el-color-success: #67c23a;
+$--el-color-danger: #f56c6c;
+$--el-color-warning: #e6a23c;
+$--el-color-info: #909399;
+.my-badge {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: fit-content;
+}
+.my-badge__content {
+    background-color: $--el-badge-bg-color;
+    border-radius: $--el-badge-radius;
+    padding: 0 $--el-badge-padding;
+    color: $--el-color-white;
+    border: 1px solid $--el-bg-color;
+    height: $--el-badge-size;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+}
+.my-badge__content.is-fixed {
+    position: absolute;
+    right: calc(1px + $--el-badge-size / 2);
+    top: 0;
+    transform: translateY(-50%) translateX(100%);
+}
+.my-badge__content.is-dot{
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    padding: 0;
+}
+.my-badge__content.is-fixed.is-dot{
+    right: 5px;
+}
+.my-badge__content--primary {
+    background-color: $--el-color-primary;
+}
+.my-badge__content--success {
+    background-color: $--el-color-success;
+}
+.my-badge__content--danger {
+    background-color: $--el-color-danger;
+}
+.my-badge__content--warning {
+    background-color: $--el-color-warning;
+}
+.my-badge__content--info {
+    background-color: $--el-color-info;
+}

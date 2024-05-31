@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+      "outDir": "./built/",
+      "sourceMap": true,
+      "strict": true,
+      // "noImplicitReturns": true,
+      "module": "es2015",
+      "moduleResolution": "node",
+      "target": "ES2015",
+      "allowJs": true,
+      "baseUrl": ".",
+      "paths": {
+        "@my/*": ["src/*"]
+      }
+  },
+  "include": [
+      "./src/**/*"
+  ],
+  "jsx": "preserve"
+}

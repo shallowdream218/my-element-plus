@@ -1,0 +1,5 @@
+# 1、为什么我已经在main.ts中注册了icon内容，但是在我自定义组件中message中无法使用？
+# 2、为什么在transition中我设置了transition不起作用，把transition标签换成div也不起作用
+# 3、为什么把transition去掉之后message就显示不出来了
+原因是在这段代码中，appendTo.appendChild(container.firstChild);因为我只是将transition注释掉了，因此container.firstChild获取到的只是一个文本，所以会出问题
+# 4、为什么在message组件中的transition标签中emit destory事件，会执行我prop中的onDestory事件？这二者有什么关联

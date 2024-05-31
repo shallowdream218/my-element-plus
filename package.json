@@ -1,14 +1,19 @@
 {
-  "name": "vue3test",
+  "name": "my-element-plus",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/cli-plugin-typescript": "^5.0.8",
     "core-js": "^3.8.3",
+    "countup.js": "^2.8.0",
+    "element-plus": "^2.7.3",
+    "lodash-unified": "^1.0.2",
+    "sass": "^1.77.2",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -17,8 +22,12 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vueuse/core": "^10.7.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "sass-loader": "^14.2.1"
   },
   "eslintConfig": {
     "root": true,
